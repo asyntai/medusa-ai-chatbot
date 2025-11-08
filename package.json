@@ -1,0 +1,61 @@
+{
+  "name": "@asyntai/medusa-chatbot",
+  "version": "1.0.0",
+  "description": "Asyntai - AI Chatbot plugin for Medusa. AI assistant / chatbot – Provides instant answers to your website visitors.",
+  "author": "Asyntai <support@asyntai.com>",
+  "license": "MIT",
+  "keywords": [
+    "medusa-plugin",
+    "medusa-plugin-integration",
+    "medusa-v2",
+    "medusa-plugin-cms",
+    "asyntai",
+    "chatbot",
+    "ai",
+    "assistant"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asyntai/medusa-chatbot"
+  },
+  "scripts": {
+    "build": "medusa plugin:build",
+    "watch": "medusa plugin:develop",
+    "publish:local": "medusa plugin:publish"
+  },
+  "devDependencies": {
+    "@medusajs/admin-sdk": "^2.0.0",
+    "@medusajs/cli": "^2.0.0",
+    "@medusajs/framework": "^2.0.0",
+    "@medusajs/medusa": "^2.0.0",
+    "@medusajs/test-utils": "^2.0.0",
+    "@medusajs/ui": "^4.0.4",
+    "@medusajs/icons": "^2.0.0",
+    "@swc/core": "^1.5.7",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@medusajs/admin-sdk": "^2.0.0",
+    "@medusajs/cli": "^2.0.0",
+    "@medusajs/framework": "^2.0.0",
+    "@medusajs/medusa": "^2.0.0",
+    "@medusajs/test-utils": "^2.0.0",
+    "@medusajs/ui": "^4.0.3",
+    "@medusajs/icons": "^2.0.0"
+  },
+  "main": "./.medusa/server/index.js",
+  "exports": {
+    ".": "./.medusa/server/index.js",
+    "./package.json": "./package.json",
+    "./admin": {
+      "import": "./.medusa/server/src/admin/index.mjs",
+      "require": "./.medusa/server/src/admin/index.js",
+      "default": "./.medusa/server/src/admin/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    ".medusa"
+  ]
+}

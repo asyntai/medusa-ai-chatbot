@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "esnext",
+    "lib": ["ES2021"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".medusa"]
+}
